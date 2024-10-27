@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween movie cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="codepen.css">
+</head>
+<body>
+    <div class="container">
+      <h1 class="title">Halloween movie cards</h1>
+      <h2 class="subtitle">Hover over the cards if you dare!</h2>
+        <div class="cover-flow">
+            <div class="movie-cover one" id="one">
+      <div id="booo">
+        <span class="overlay-text">There were warned...They are doomed. And on Friday the 13th, nothing will save them.</span>
+      </div>
+            </div>
+
+
+            <div class="movie-cover two" id="two">
+              <div id="halloween">
+              <span class="overlay-text-two">The night..He came home.</span>   
+            </div>
+            </div>
+
+
+            <div class="movie-cover three" id="three">
+
+              <div id="scream">
+                <span class="overlay-text-three">Don't Answer The Door, Don't Leave The House, Don't Answer The Phone, But Most Of All, Don't SCREAM. </span>   
+            </div>
+            </div>
+
+           
+            <div class="movie-cover four" id="four">
+              <div id="it">
+              <span class="overlay-text-four"></span>  
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+   //one
+const halloweenMovie = document.getElementById('one');
+
+const hand = document.createElement('div');
+hand.id = 'hand';
+hand.innerHTML = '<img src="https://iili.io/2fMRt1V.png" alt="claw">';  // afbeelding
+
+halloweenMovie.appendChild(hand);
+
+halloweenMovie.addEventListener('mouseover', () => {
+  hand.style.display = 'block';
+});
+
+halloweenMovie.addEventListener('mouseout', () => {
+  hand.style.display = 'none';
+});
+      
+      </script>
+
+
+     
+      <script>
+         //two
+   
+        const halloweenMovieTwo = document.getElementById('two');
+  
+        const knife = document.createElement('div');
+        knife.id = 'knife';
+        knife.innerHTML = '<img src="https://iili.io/2fMRZqQ.png" alt="Halloween">';  // afbeelding
+
+        halloweenMovieTwo.appendChild(knife);
+        
+        halloweenMovieTwo.addEventListener('mouseover', () => {
+          knife.style.display = 'block';
+        });
+        
+        halloweenMovieTwo.addEventListener('mouseout', () => {
+          knife.style.display = 'none';
+        });
+        
+        </script>
+
+        <script>
+          //three
+    
+         const halloweenMovieThree = document.getElementById('three');
+   
+         const scream = document.createElement('div');
+         scream.id = 'scream';
+         scream.innerHTML = '<img src="https://iili.io/2fM5K1p.png" alt="scream movie">';  // afbeelding
+         
+   
+         halloweenMovieThree.appendChild(scream);
+         
+   
+         halloweenMovieThree.addEventListener('mouseover', () => {
+           scream.style.display = 'block';
+         });
+         
+         halloweenMovieThree.addEventListener('mouseout', () => {
+           scream.style.display = 'none';
+         });
+         
+         </script>
+
+
+
+
+
+         <script>
+          //four
+    
+         const halloweenMovieFour = document.getElementById('four');
+   
+         const it = document.createElement('div');
+         it.id = 'it';
+         it.innerHTML = '<img src="https://iili.io/2fM5JIa.jpg" alt="It movie">';  // afbeelding
+         
+   
+         halloweenMovieFour.appendChild(it);
+         
+   
+         halloweenMovieFour.addEventListener('mouseover', () => {
+           it.style.display = 'block';
+         });
+         
+         halloweenMovieFour.addEventListener('mouseout', () => {
+           it.style.display = 'none';
+         });
+         
+         </script>
+
+         
+</body>
+</html>
